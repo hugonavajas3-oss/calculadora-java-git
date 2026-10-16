@@ -13,6 +13,7 @@ public class Calculadora {
             System.out.println("2. Resta");
             System.out.println("3. Multiplicación");
             System.out.println("4. División");
+            System.out.println("5. potencia");
             System.out.print("Elige una operación (1-4): ");
             operacion = scanner.nextInt();
             
@@ -44,6 +45,10 @@ public class Calculadora {
                     }
                 }
                 default -> System.out.println("Opción no válida.");
+                case 5 -> {
+                    resultado = Math.pow(num1, num2);
+                System.out.println("Resultado: " + num1 + " ^ " + num2 + " = " + resultado);
+                }
             }
         } // Aquí finaliza el bloque 'try' y el scanner se cierra solo, ya no hace falta "scanner.close()"
     }
