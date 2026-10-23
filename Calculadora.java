@@ -32,7 +32,7 @@ public class Calculadora {
             }
 
             switch (operacion) {
-                case 1 -> {
+                case 1 -> { // Suma revisada desde feature-multiplicacion
                     resultado = num1 + num2;
                     System.out.println("Resultado: " + num1 + " + " + num2 + " = " + resultado);
                 }
