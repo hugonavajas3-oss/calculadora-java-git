@@ -24,7 +24,11 @@ public class Calculadora {
             num2 = scanner.nextDouble();
 
             switch (operacion) {
+<<<<<<< HEAD
                 case 1 -> { // Suma revisada desde feature-multiplicacion
+=======
+                case 1 -> { // Suma revisada desde feature-multiplicacion - rama
+>>>>>>> feature-multiplicacion
                     resultado = num1 + num2;
                     System.out.println("Resultado: " + num1 + " + " + num2 + " = " + resultado);
                 }
