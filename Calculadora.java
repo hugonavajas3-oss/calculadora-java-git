@@ -14,7 +14,7 @@ public class Calculadora {
             System.out.println("3. Multiplicación");
             System.out.println("4. División");
             System.out.println("5. Potencia");
-            System.out.print("Elige una operación (1-4): ");
+            System.out.print("Elige una operación (1-5): ");
             operacion = scanner.nextInt();
 
             System.out.print("Ingresa el primer número: ");
@@ -24,7 +24,7 @@ public class Calculadora {
             num2 = scanner.nextDouble();
 
             switch (operacion) {
-                case 1 -> {
+                case 1 -> { // Suma revisada desde feature-multiplicacion
                     resultado = num1 + num2;
                     System.out.println("Resultado: " + num1 + " + " + num2 + " = " + resultado);
                 }
@@ -44,11 +44,11 @@ public class Calculadora {
                         System.out.println("Error: No se puede dividir entre cero.");
                     }
                 }
-                default -> System.out.println("Opción no válida.");
                 case 5 -> {
                     resultado = Math.pow(num1, num2);
                     System.out.println("Resultado: " + num1 + " ^ " + num2 + " = " + resultado);
                 }
+                default -> System.out.println("Opción no válida.");
             }
         } // Aquí finaliza el bloque 'try' y el scanner se cierra solo, ya no hace falta
           // "scanner.close()"
